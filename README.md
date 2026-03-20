@@ -1,9 +1,30 @@
-# AIMC-Spec
+# AIMC-Spec Dataset (Updated Version)
+
 ### Spectrogram-Based Radar Intra-Pulse Modulation Classification Benchmark
 
 This repository contains the experimental framework used to benchmark **Automatic Intra-Pulse Modulation Classification (AIMC)** models using a **unified spectrogram representation**.
 
 The project evaluates multiple deep learning architectures on the **same spectrogram input pipeline**, allowing fair comparison of model performance.
+
+This repository hosts the updated release of the AIMC-Spec dataset, a synthetic benchmark designed for reproducible evaluation of Automatic Intrapulse Modulation Classification (AIMC) algorithms.
+
+This version introduces several important improvements over the initial AIMC-Spec release, including:
+
+- redesigned storage pipeline reducing dataset size from >500 GB to <30 GB
+- refined modulation set and standardized signal definitions
+- streamlined dataset generation process for improved usability
+- updated benchmark protocol and experimental evaluation
+
+The updated dataset is fully described in the following paper:
+AIMC-Spec: An Updated Benchmark Dataset for Automatic Intrapulse Modulation Classification
+arXiv: https://arxiv.org/abs/2601.08265
+
+### Users are strongly encouraged to consult the paper for:
+- dataset design methodology
+- signal generation details
+- SNR definition and preprocessing
+- benchmark evaluation protocol
+- recommended train/validation/test usage
 
 ---
 
@@ -271,6 +292,16 @@ PY
 # Citation
 
 If you use this codebase or the AIMC-Spec dataset, please cite the associated publication.
+
+@misc{cocks2026,
+  title         = {AIMC-Spec: A Benchmark Dataset for Automatic Intrapulse Modulation Classification under Variable Noise Conditions},
+  author        = {Sebastian L. Cocks and Salvador Dreo and Brian Ng and Feras Dayoub},
+  year          = {2026},
+  eprint        = {2601.08265},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  note          = {arXiv:2601.08265v2}
+}
 
 ---
 
